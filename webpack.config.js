@@ -7,7 +7,10 @@ module.exports = {
     },
     module: {
         loaders: [
-            {test: /\.css$/, loader: "style-loader!css-loader"},
+            {
+                test: /\.css$/,
+                loader: "style-loader!css-loader?modules"
+            },
             {test: /\.png$/, loader: "file-loader"},
             {test: /\.jpg$/, loader: "file-loader"},
             {
